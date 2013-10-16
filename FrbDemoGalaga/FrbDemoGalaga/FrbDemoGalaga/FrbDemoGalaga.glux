@@ -1,13 +1,131 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GlueProjectSave xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Screens />
-  <Entities />
+  <Screens>
+    <ScreenSave>
+      <Tags>
+        <string>GLUE</string>
+      </Tags>
+      <Source>GLUE</Source>
+      <Name>Screens\TestScreen</Name>
+      <NamedObjects>
+        <NamedObjectSave>
+          <SourceType>Entity</SourceType>
+          <SourceClassType>Entities\Ships\PlayerShip</SourceClassType>
+          <InstanceName>PlayerShipInstance</InstanceName>
+          <AttachToContainer>true</AttachToContainer>
+          <IndependentOfCamera>true</IndependentOfCamera>
+        </NamedObjectSave>
+      </NamedObjects>
+    </ScreenSave>
+  </Screens>
+  <Entities>
+    <EntitySave>
+      <Tags>
+        <string>GLUE</string>
+      </Tags>
+      <Source>GLUE</Source>
+      <CustomVariables>
+        <CustomVariable>
+          <Properties>
+            <PropertySave>
+              <Name>Type</Name>
+              <ValueAsString>float</ValueAsString>
+            </PropertySave>
+          </Properties>
+          <Name>DefaultFireCooldown</Name>
+          <Type>float</Type>
+        </CustomVariable>
+        <CustomVariable>
+          <Properties>
+            <PropertySave>
+              <Name>Type</Name>
+              <ValueAsString>float</ValueAsString>
+            </PropertySave>
+          </Properties>
+          <Name>XSpeed</Name>
+          <Type>float</Type>
+          <DefaultValue xsi:type="xsd:float">200</DefaultValue>
+        </CustomVariable>
+      </CustomVariables>
+      <BaseEntity>Entities\Ships\Ship</BaseEntity>
+      <Name>Entities\Ships\PlayerShip</Name>
+      <NamedObjects>
+        <NamedObjectSave>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <SourceType>FlatRedBallType</SourceType>
+          <SourceFile />
+          <SourceClassType>Sprite</SourceClassType>
+          <InstanceName>Visual</InstanceName>
+          <ExposedInDerived>true</ExposedInDerived>
+          <AttachToContainer>true</AttachToContainer>
+          <DefinedByBase>true</DefinedByBase>
+          <InstantiatedByBase>true</InstantiatedByBase>
+          <IndependentOfCamera>true</IndependentOfCamera>
+        </NamedObjectSave>
+      </NamedObjects>
+      <Is2D>true</Is2D>
+    </EntitySave>
+    <EntitySave>
+      <Tags>
+        <string>GLUE</string>
+      </Tags>
+      <Source>GLUE</Source>
+      <Name>Entities\Ships\Ship</Name>
+      <NamedObjects>
+        <NamedObjectSave>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>Texture2D</Type>
+            <Member>Texture</Member>
+            <ValueAsString>redball</ValueAsString>
+          </CustomProperty>
+          <SourceType>FlatRedBallType</SourceType>
+          <SourceFile />
+          <SourceClassType>Sprite</SourceClassType>
+          <InstanceName>Visual</InstanceName>
+          <ExposedInDerived>true</ExposedInDerived>
+          <AttachToContainer>true</AttachToContainer>
+          <IndependentOfCamera>true</IndependentOfCamera>
+        </NamedObjectSave>
+        <NamedObjectSave>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Radius</Member>
+            <ValueAsFloat>16</ValueAsFloat>
+          </CustomProperty>
+          <SourceType>FlatRedBallType</SourceType>
+          <SourceFile />
+          <SourceClassType>Circle</SourceClassType>
+          <InstanceName>Collision</InstanceName>
+          <AttachToContainer>true</AttachToContainer>
+          <IndependentOfCamera>true</IndependentOfCamera>
+        </NamedObjectSave>
+      </NamedObjects>
+      <ReferencedFiles>
+        <ReferencedFileSave>
+          <Name>Entities/Ships/Ship/redball.BMP</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>Microsoft.Xna.Framework.Graphics.Texture2D</RuntimeType>
+        </ReferencedFileSave>
+      </ReferencedFiles>
+      <Is2D>true</Is2D>
+    </EntitySave>
+  </Entities>
   <GlobalFiles />
   <GlobalContentSettingsSave>
     <LoadAsynchronously>false</LoadAsynchronously>
     <RecordLockContention>false</RecordLockContention>
   </GlobalContentSettingsSave>
   <SyncedProjects />
+  <StartUpScreen>Screens\TestScreen</StartUpScreen>
   <In2D>true</In2D>
   <SetResolution>false</SetResolution>
   <ResolutionWidth>800</ResolutionWidth>

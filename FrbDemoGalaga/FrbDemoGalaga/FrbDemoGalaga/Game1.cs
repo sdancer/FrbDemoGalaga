@@ -47,7 +47,7 @@ namespace FrbDemoGalaga
 			GlobalContent.Initialize();
 			CameraSetup.SetupCamera(SpriteManager.Camera, graphics);
 
-            //ScreenManager.Start(typeof(SomeScreen).FullName);
+			FlatRedBall.Screens.ScreenManager.Start(typeof(FrbDemoGalaga.Screens.TestScreen));
 
             base.Initialize();
         }
