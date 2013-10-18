@@ -132,6 +132,16 @@
       <IsSharedStatic>true</IsSharedStatic>
       <HasPublicProperty>true</HasPublicProperty>
     </ReferencedFileSave>
+    <ReferencedFileSave>
+      <Name>GlobalContent/nesfont.fnt</Name>
+      <IsSharedStatic>true</IsSharedStatic>
+      <HasPublicProperty>true</HasPublicProperty>
+    </ReferencedFileSave>
+    <ReferencedFileSave>
+      <Name>GlobalContent/nesfontTexture.png</Name>
+      <IsSharedStatic>true</IsSharedStatic>
+      <HasPublicProperty>true</HasPublicProperty>
+    </ReferencedFileSave>
   </GlobalFiles>
   <GlobalContentSettingsSave>
     <LoadAsynchronously>false</LoadAsynchronously>
