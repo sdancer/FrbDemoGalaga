@@ -113,6 +113,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Bullets\Bullet.cs" />
+    <Compile Include="Entities\Bullets\Bullet.Generated.cs">
+      <DependentUpon>bullet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Bullets\EnemyBullet.cs" />
+    <Compile Include="Entities\Bullets\EnemyBullet.Generated.cs">
+      <DependentUpon>enemybullet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Bullets\PlayerBullet.cs" />
+    <Compile Include="Entities\Bullets\PlayerBullet.Generated.cs">
+      <DependentUpon>PlayerBullet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Ships\PlayerShip.cs" />
     <Compile Include="Entities\Ships\PlayerShip.Generated.cs">
       <DependentUpon>PlayerShip.cs</DependentUpon>

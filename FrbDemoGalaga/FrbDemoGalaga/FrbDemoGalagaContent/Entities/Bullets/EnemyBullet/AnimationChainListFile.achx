@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AnimationChainArraySave xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileRelativeTextures>true</FileRelativeTextures>
+  <TimeMeasurementUnit>Undefined</TimeMeasurementUnit>
+  <AnimationChain>
+    <Name>Bullet</Name>
+    <ColorKey>0</ColorKey>
+    <Frame>
+      <FlipHorizontal>false</FlipHorizontal>
+      <FlipVertical>true</FlipVertical>
+      <TextureName>../../../GlobalContent/GalagaSpriteSheet.png</TextureName>
+      <FrameLength>0.1</FrameLength>
+      <LeftCoordinate>0.8608491</LeftCoordinate>
+      <RightCoordinate>0.8679245</RightCoordinate>
+      <TopCoordinate>0.571801543</TopCoordinate>
+      <BottomCoordinate>0.5926893</BottomCoordinate>
+      <RelativeX>0</RelativeX>
+      <RelativeY>0</RelativeY>
+    </Frame>
+  </AnimationChain>
+  <FileName>D:/Users/scott/Documents/GitHub/FrbDemoGalaga/FrbDemoGalaga/FrbDemoGalaga/FrbDemoGalagaContent/Entities/Bullets/EnemyBullet/AnimationChainListFile.achx</FileName>
+</AnimationChainArraySave>
