@@ -115,11 +115,11 @@
   <ItemGroup>
     <Compile Include="Entities\Bullets\Bullet.cs" />
     <Compile Include="Entities\Bullets\Bullet.Generated.cs">
-      <DependentUpon>bullet.cs</DependentUpon>
+      <DependentUpon>Bullet.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Bullets\EnemyBullet.cs" />
     <Compile Include="Entities\Bullets\EnemyBullet.Generated.cs">
-      <DependentUpon>enemybullet.cs</DependentUpon>
+      <DependentUpon>EnemyBullet.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Bullets\PlayerBullet.cs" />
     <Compile Include="Entities\Bullets\PlayerBullet.Generated.cs">
@@ -133,6 +133,8 @@
     <Compile Include="Entities\Ships\Ship.Generated.cs">
       <DependentUpon>Ship.cs</DependentUpon>
     </Compile>
+    <Compile Include="Factories\EnemyBulletFactory.Generated.cs" />
+    <Compile Include="Factories\PlayerBulletFactory.Generated.cs" />
     <Compile Include="GlobalContent.Generated.cs" />
     <Compile Include="Performance\IEntityFactory.Generated.cs" />
     <Compile Include="Performance\IPoolable.Generated.cs" />
