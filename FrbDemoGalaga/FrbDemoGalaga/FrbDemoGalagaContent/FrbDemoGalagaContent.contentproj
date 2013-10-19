@@ -50,6 +50,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>AnimationChainListFile</Name>
     </None>
+    <None Include="Entities\Ships\PlayerShip\AnimationChainListFile.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>AnimationChainListFile</Name>
+    </None>
     <None Include="Entities\Ships\Ship\redball.BMP">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>redball</Name>

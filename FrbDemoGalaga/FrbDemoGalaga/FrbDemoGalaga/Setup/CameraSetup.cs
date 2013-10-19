@@ -14,7 +14,7 @@ namespace FrbDemoGalaga
 	{
 			internal static void SetupCamera (Camera cameraToSetUp, GraphicsDeviceManager graphicsDeviceManager)
 			{
-				cameraToSetUp.UsePixelCoordinates();
+				cameraToSetUp.UsePixelCoordinates(false, 400, 300);
 			}
 			internal static void ResetCamera (Camera cameraToReset)
 			{

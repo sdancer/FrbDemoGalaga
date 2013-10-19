@@ -15,20 +15,20 @@ namespace FrbDemoGalaga
 	public static partial class GlobalContent
 	{
 		
-		public static Microsoft.Xna.Framework.Graphics.Texture2D GalagaSpriteSheet { get; set; }
 		public static FlatRedBall.Graphics.BitmapFont nesfont { get; set; }
 		public static Microsoft.Xna.Framework.Graphics.Texture2D nesfontTexture { get; set; }
+		public static Microsoft.Xna.Framework.Graphics.Texture2D GalagaSpriteSheet { get; set; }
 		[System.Obsolete("Use GetFile instead")]
 		public static object GetStaticMember (string memberName)
 		{
 			switch(memberName)
 			{
-				case  "GalagaSpriteSheet":
-					return GalagaSpriteSheet;
 				case  "nesfont":
 					return nesfont;
 				case  "nesfontTexture":
 					return nesfontTexture;
+				case  "GalagaSpriteSheet":
+					return GalagaSpriteSheet;
 			}
 			return null;
 		}
@@ -36,12 +36,12 @@ namespace FrbDemoGalaga
 		{
 			switch(memberName)
 			{
-				case  "GalagaSpriteSheet":
-					return GalagaSpriteSheet;
 				case  "nesfont":
 					return nesfont;
 				case  "nesfontTexture":
 					return nesfontTexture;
+				case  "GalagaSpriteSheet":
+					return GalagaSpriteSheet;
 			}
 			return null;
 		}
@@ -51,9 +51,9 @@ namespace FrbDemoGalaga
 		public static void Initialize ()
 		{
 			
-			GalagaSpriteSheet = FlatRedBallServices.Load<Microsoft.Xna.Framework.Graphics.Texture2D>(@"content/globalcontent/galagaspritesheet.png", ContentManagerName);
 			nesfont = FlatRedBallServices.Load<FlatRedBall.Graphics.BitmapFont>(@"content/globalcontent/nesfont.fnt", ContentManagerName);
 			nesfontTexture = FlatRedBallServices.Load<Microsoft.Xna.Framework.Graphics.Texture2D>(@"content/globalcontent/nesfonttexture.png", ContentManagerName);
+			GalagaSpriteSheet = FlatRedBallServices.Load<Microsoft.Xna.Framework.Graphics.Texture2D>(@"content/globalcontent/galagaspritesheet.png", ContentManagerName);
 						IsInitialized = true;
 		}
 		public static void Reload (object whatToReload)

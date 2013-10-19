@@ -29,5 +29,19 @@
       </CameraSave>
       <ElementName>Entities\Bullets\PlayerBullet</ElementName>
     </ElementCameraSave>
+    <ElementCameraSave>
+      <CameraSave>
+        <X>-43.0787239</X>
+        <Y>84.7215042</Y>
+        <Z>40</Z>
+        <Orthogonal>true</Orthogonal>
+        <OrthogonalHeight>215.393616</OrthogonalHeight>
+        <OrthogonalWidth>-1</OrthogonalWidth>
+        <NearClipPlane>1</NearClipPlane>
+        <FarClipPlane>1000</FarClipPlane>
+        <AspectRatio>1.33333337</AspectRatio>
+      </CameraSave>
+      <ElementName>Entities\Ships\PlayerShip</ElementName>
+    </ElementCameraSave>
   </ElementCameraSaves>
 </ElementSettingsSave>

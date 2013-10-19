@@ -1,2 +1,8 @@
+Content\Entities\Bullets\EnemyBullet\AnimationChainListFile.achx
+Content\Entities\Bullets\PlayerBullet\AnimationChainListFile.achx
+Content\Entities\Ships\PlayerShip\AnimationChainListFile.achx
 Content\Entities\Ships\Ship\redball.BMP
+Content\GlobalContent\GalagaSpriteSheet.png
+Content\GlobalContent\nesfont.fnt
+Content\GlobalContent\nesfontTexture.png
 redball.BMP

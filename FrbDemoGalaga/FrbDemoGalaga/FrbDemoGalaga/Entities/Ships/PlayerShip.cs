@@ -78,16 +78,12 @@ namespace FrbDemoGalaga.Entities.Ships
             //Player Movement Input
             if (InputManager.Keyboard.KeyDown(Keys.A))
             {
-                if (Visual.Left > SpriteManager.Camera.AbsoluteLeftXEdgeAt(Z))
-                    XVelocity = -XSpeed;
+                X = X - XSpeed * TimeManager.LastSecondDifference; 
             }
             else if (InputManager.Keyboard.KeyDown(Keys.D))
             {
-                if (Visual.Right < SpriteManager.Camera.AbsoluteRightXEdgeAt(Z))
-                    XVelocity = XSpeed;
+                X = X + XSpeed * TimeManager.LastSecondDifference; 
             }
-            else
-                XVelocity = 0; 
         }
 
         /// <summary>
@@ -97,15 +93,13 @@ namespace FrbDemoGalaga.Entities.Ships
         {
             float minX = SpriteManager.Camera.AbsoluteLeftXEdgeAt(Z);
             float maxX = SpriteManager.Camera.AbsoluteRightXEdgeAt(Z);
-
+            Visual.ForceUpdateDependencies(); 
             if (Visual.Right > maxX)
             {
-                XVelocity = 0;
                 X = maxX - Visual.ScaleX; 
             }
             else if (Visual.Left < minX)
             {
-                XVelocity = 0; 
                 X = minX + Visual.ScaleX; 
             }
                 
