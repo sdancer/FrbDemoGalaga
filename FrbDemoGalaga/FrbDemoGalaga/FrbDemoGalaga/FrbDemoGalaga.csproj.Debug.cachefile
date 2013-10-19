@@ -1,5 +1,16 @@
 Content\Entities\Bullets\EnemyBullet\AnimationChainListFile.achx
 Content\Entities\Bullets\PlayerBullet\AnimationChainListFile.achx
+Content\Entities\Ships\EnemyShip\BlueGalCommAnimations.achx
+Content\Entities\Ships\EnemyShip\BlueMinionAnimations.achx
+Content\Entities\Ships\EnemyShip\EnemyData.csv
+Content\Entities\Ships\EnemyShip\GreenGalCommAnimations.achx
+Content\Entities\Ships\EnemyShip\GreenMinionAnimations.achx
+Content\Entities\Ships\EnemyShip\MayflyAnimations.achx
+Content\Entities\Ships\EnemyShip\RedFlyAnimations.achx
+Content\Entities\Ships\EnemyShip\RedMinionAnimations.achx
+Content\Entities\Ships\EnemyShip\SpaceBugAnimations.achx
+Content\Entities\Ships\EnemyShip\UFOAnimations.achx
+Content\Entities\Ships\EnemyShip\YellowMinionAnimations.achx
 Content\Entities\Ships\PlayerShip\AnimationChainListFile.achx
 Content\Entities\Ships\Ship\redball.BMP
 Content\GlobalContent\GalagaSpriteSheet.png

@@ -29,7 +29,7 @@ namespace FrbDemoGalaga.Screens
 
 		void CustomInitialize()
 		{
-
+            EnemyShipInstance.LoadEnemyType("BlueGalComm"); 
 
 		}
 

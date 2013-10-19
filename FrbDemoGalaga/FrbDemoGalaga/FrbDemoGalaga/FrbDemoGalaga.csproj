@@ -113,6 +113,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataTypes\EnemyData.Generated.cs" />
     <Compile Include="Entities\Bullets\Bullet.cs" />
     <Compile Include="Entities\Bullets\Bullet.Generated.cs">
       <DependentUpon>Bullet.cs</DependentUpon>
@@ -124,6 +125,10 @@
     <Compile Include="Entities\Bullets\PlayerBullet.cs" />
     <Compile Include="Entities\Bullets\PlayerBullet.Generated.cs">
       <DependentUpon>PlayerBullet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Ships\EnemyShip.cs" />
+    <Compile Include="Entities\Ships\EnemyShip.Generated.cs">
+      <DependentUpon>EnemyShip.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Ships\PlayerShip.cs" />
     <Compile Include="Entities\Ships\PlayerShip.Generated.cs">

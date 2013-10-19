@@ -50,6 +50,50 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>AnimationChainListFile</Name>
     </None>
+    <None Include="Entities\Ships\EnemyShip\BlueGalCommAnimations.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>BlueGalCommAnimations</Name>
+    </None>
+    <None Include="Entities\Ships\EnemyShip\BlueMinionAnimations.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>BlueMinionAnimations</Name>
+    </None>
+    <None Include="Entities\Ships\EnemyShip\EnemyData.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>EnemyData</Name>
+    </None>
+    <None Include="Entities\Ships\EnemyShip\GreenGalCommAnimations.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>GreenGalCommAnimations</Name>
+    </None>
+    <None Include="Entities\Ships\EnemyShip\GreenMinionAnimations.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>GreenMinionAnimations</Name>
+    </None>
+    <None Include="Entities\Ships\EnemyShip\MayflyAnimations.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>MayflyAnimations</Name>
+    </None>
+    <None Include="Entities\Ships\EnemyShip\RedFlyAnimations.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>RedFlyAnimations</Name>
+    </None>
+    <None Include="Entities\Ships\EnemyShip\RedMinionAnimations.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>RedMinionAnimations</Name>
+    </None>
+    <None Include="Entities\Ships\EnemyShip\SpaceBugAnimations.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>SpaceBugAnimations</Name>
+    </None>
+    <None Include="Entities\Ships\EnemyShip\UFOAnimations.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>UFOAnimations</Name>
+    </None>
+    <None Include="Entities\Ships\EnemyShip\YellowMinionAnimations.achx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>YellowMinionAnimations</Name>
+    </None>
     <None Include="Entities\Ships\PlayerShip\AnimationChainListFile.achx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>AnimationChainListFile</Name>

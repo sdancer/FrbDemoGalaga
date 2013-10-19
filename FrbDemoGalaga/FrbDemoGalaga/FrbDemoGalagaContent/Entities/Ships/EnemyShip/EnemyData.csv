@@ -1,0 +1,11 @@
+"Name (string, required)",AnimationsFile (string),DefaultChainName (string)
+SpaceBug,SpaceBugAnimations,Normal
+RedMinion,RedMinionBugAnimations,Normal
+YellowMinion,YellowMinionAnimations,Normal
+BlueMinion,BlueMinionAnimations,Normal
+MayflyBug,MayflyAnimations,Normal
+GreenMinion,GreenMinionAnimations,Normal
+RedFly,RedFlyAnimations,Normal
+BlueGalComm,BlueGalCommAnimations,Normal
+GreenGalComm,GreenGalCommAnimations,Normal
+UFO,UFOAnimations,Normal
