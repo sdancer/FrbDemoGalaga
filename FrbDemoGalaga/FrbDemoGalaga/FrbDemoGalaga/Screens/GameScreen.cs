@@ -29,14 +29,11 @@ namespace FrbDemoGalaga.Screens
 
 		void CustomInitialize()
 		{
-
-
+		    SpriteManager.Camera.BackgroundColor = Microsoft.Xna.Framework.Color.Black;
 		}
 
 		void CustomActivity(bool firstTimeCalled)
 		{
-
-
 		}
 
 		void CustomDestroy()

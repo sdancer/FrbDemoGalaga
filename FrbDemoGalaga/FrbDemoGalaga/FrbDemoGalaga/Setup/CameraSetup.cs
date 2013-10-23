@@ -14,7 +14,11 @@ namespace FrbDemoGalaga
 	{
 			internal static void SetupCamera (Camera cameraToSetUp, GraphicsDeviceManager graphicsDeviceManager)
 			{
-				cameraToSetUp.UsePixelCoordinates(false, 400, 300);
+				FlatRedBallServices.GraphicsOptions.SetResolution(448, 576);
+				#if WINDOWS_PHONE || WINDOWS_8 || IOS || ANDROID
+				graphicsDeviceManager.SupportedOrientations = DisplayOrientation.Portrait;
+				#endif
+				cameraToSetUp.UsePixelCoordinates(false, 250, 322);
 			}
 			internal static void ResetCamera (Camera cameraToReset)
 			{

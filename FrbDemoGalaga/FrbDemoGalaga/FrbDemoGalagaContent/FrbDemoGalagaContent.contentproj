@@ -86,6 +86,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>SpaceBugAnimations</Name>
     </None>
+    <None Include="Entities\Ships\EnemyShip\SplineListFile.splx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>SplineListFile</Name>
+    </None>
     <None Include="Entities\Ships\EnemyShip\UFOAnimations.achx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>UFOAnimations</Name>

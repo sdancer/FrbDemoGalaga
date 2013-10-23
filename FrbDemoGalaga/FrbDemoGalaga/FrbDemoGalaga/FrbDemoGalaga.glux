@@ -17,6 +17,46 @@
           <AttachToContainer>true</AttachToContainer>
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
+        <NamedObjectSave>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Y</Member>
+            <ValueAsFloat>50</ValueAsFloat>
+          </CustomProperty>
+          <SourceType>Entity</SourceType>
+          <SourceFile />
+          <SourceClassType>Entities\Ships\EnemyShip</SourceClassType>
+          <InstanceName>EnemyShipInstance</InstanceName>
+          <AttachToContainer>true</AttachToContainer>
+          <IndependentOfCamera>true</IndependentOfCamera>
+        </NamedObjectSave>
+        <NamedObjectSave>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>X</Member>
+            <ValueAsFloat>-104</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Y</Member>
+            <ValueAsFloat>-135</ValueAsFloat>
+          </CustomProperty>
+          <SourceType>Entity</SourceType>
+          <SourceFile />
+          <SourceClassType>Entities\Ships\PlayerShip</SourceClassType>
+          <InstanceName>PlayerShipInstance</InstanceName>
+          <AttachToContainer>true</AttachToContainer>
+          <IndependentOfCamera>true</IndependentOfCamera>
+        </NamedObjectSave>
+        <NamedObjectSave>
+          <SourceType>Entity</SourceType>
+          <SourceFile />
+          <SourceClassType>Entities\StarBackground</SourceClassType>
+          <InstanceName>StarBackgroundInstance</InstanceName>
+          <AttachToContainer>true</AttachToContainer>
+          <IndependentOfCamera>true</IndependentOfCamera>
+          <LayerOn>Under Everything (Engine Layer)</LayerOn>
+        </NamedObjectSave>
       </NamedObjects>
       <UseGlobalContent>true</UseGlobalContent>
     </ScreenSave>
@@ -294,6 +334,28 @@
           <Name>CurrentEnemyData</Name>
           <Type>Entities/Ships/EnemyShip/EnemyData.csv</Type>
         </CustomVariable>
+        <CustomVariable>
+          <Properties>
+            <PropertySave>
+              <Name>Type</Name>
+              <ValueAsString>float</ValueAsString>
+            </PropertySave>
+          </Properties>
+          <Name>X</Name>
+          <Type>float</Type>
+          <DefaultValue xsi:type="xsd:float">0</DefaultValue>
+        </CustomVariable>
+        <CustomVariable>
+          <Properties>
+            <PropertySave>
+              <Name>Type</Name>
+              <ValueAsString>float</ValueAsString>
+            </PropertySave>
+          </Properties>
+          <Name>Y</Name>
+          <Type>float</Type>
+          <DefaultValue xsi:type="xsd:float">0</DefaultValue>
+        </CustomVariable>
       </CustomVariables>
       <BaseEntity>Entities\Ships\Ship</BaseEntity>
       <Name>Entities\Ships\EnemyShip</Name>
@@ -305,11 +367,6 @@
             <ValueAsString>redball</ValueAsString>
           </CustomProperty>
           <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
             <Type>AnimationChainList</Type>
             <Member>AnimationChains</Member>
             <ValueAsString>SpaceBugAnimations</ValueAsString>
@@ -318,6 +375,11 @@
             <Type>string</Type>
             <Member>CurrentChainName</Member>
             <ValueAsString>Normal</ValueAsString>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
           </CustomProperty>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
@@ -330,10 +392,6 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Radius</Member>
-          </CustomProperty>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceClassType>Circle</SourceClassType>
@@ -402,6 +460,11 @@
           <CreatesDictionary>true</CreatesDictionary>
           <RuntimeType />
         </ReferencedFileSave>
+        <ReferencedFileSave>
+          <Name>Entities/Ships/EnemyShip/SplineListFile.splx</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Math.Splines.SplineList</RuntimeType>
+        </ReferencedFileSave>
       </ReferencedFiles>
       <Is2D>true</Is2D>
     </EntitySave>
@@ -432,21 +495,33 @@
           <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">200</DefaultValue>
         </CustomVariable>
+        <CustomVariable>
+          <Properties>
+            <PropertySave>
+              <Name>Type</Name>
+              <ValueAsString>float</ValueAsString>
+            </PropertySave>
+          </Properties>
+          <Name>X</Name>
+          <Type>float</Type>
+          <DefaultValue xsi:type="xsd:float">0</DefaultValue>
+        </CustomVariable>
+        <CustomVariable>
+          <Properties>
+            <PropertySave>
+              <Name>Type</Name>
+              <ValueAsString>float</ValueAsString>
+            </PropertySave>
+          </Properties>
+          <Name>Y</Name>
+          <Type>float</Type>
+          <DefaultValue xsi:type="xsd:float">0</DefaultValue>
+        </CustomVariable>
       </CustomVariables>
       <BaseEntity>Entities\Ships\Ship</BaseEntity>
       <Name>Entities\Ships\PlayerShip</Name>
       <NamedObjects>
         <NamedObjectSave>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>LeftTexturePixel</Member>
-            <ValueAsFloat>184</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>RightTexturePixel</Member>
-            <ValueAsFloat>199</ValueAsFloat>
-          </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
             <Member>TopTexturePixel</Member>
@@ -456,6 +531,16 @@
             <Type>float</Type>
             <Member>BottomTexturePixel</Member>
             <ValueAsFloat>71</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>LeftTexturePixel</Member>
+            <ValueAsFloat>184</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>RightTexturePixel</Member>
+            <ValueAsFloat>199</ValueAsFloat>
           </CustomProperty>
           <CustomProperty>
             <Type>AnimationChainList</Type>
@@ -482,10 +567,6 @@
             <Type>float</Type>
             <Member>Radius</Member>
             <ValueAsFloat>8</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>Visible</Member>
           </CustomProperty>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
@@ -564,6 +645,93 @@
       <UseGlobalContent>true</UseGlobalContent>
       <Is2D>true</Is2D>
     </EntitySave>
+    <EntitySave>
+      <Tags>
+        <string>GLUE</string>
+      </Tags>
+      <Source>GLUE</Source>
+      <CustomVariables>
+        <CustomVariable>
+          <Properties>
+            <PropertySave>
+              <Name>Type</Name>
+              <ValueAsString>float</ValueAsString>
+            </PropertySave>
+          </Properties>
+          <Name>DestroyPoint</Name>
+          <Type>float</Type>
+        </CustomVariable>
+      </CustomVariables>
+      <Name>Entities\Star</Name>
+      <NamedObjects>
+        <NamedObjectSave>
+          <CustomProperty>
+            <Type>ColorOperation</Type>
+            <Member>ColorOperation</Member>
+            <ValueAsInt>6</ValueAsInt>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Height</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>0</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Width</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <SourceType>FlatRedBallType</SourceType>
+          <SourceFile />
+          <SourceClassType>Sprite</SourceClassType>
+          <InstanceName>SpriteInstance</InstanceName>
+          <AttachToContainer>true</AttachToContainer>
+          <VariablesToReset>
+            <string>X</string>
+            <string>Y</string>
+            <string>Z</string>
+            <string>XVelocity</string>
+            <string>YVelocity</string>
+            <string>ZVelocity</string>
+            <string>RotationX</string>
+            <string>RotationY</string>
+            <string>RotationZ</string>
+            <string>RotationXVelocity</string>
+            <string>RotationYVelocity</string>
+            <string>RotationZVelocity</string>
+            <string>Alpha</string>
+            <string>AlphaRate</string>
+          </VariablesToReset>
+          <IndependentOfCamera>true</IndependentOfCamera>
+        </NamedObjectSave>
+      </NamedObjects>
+      <CreatedByOtherEntities>true</CreatedByOtherEntities>
+      <PooledByFactory>true</PooledByFactory>
+      <Is2D>true</Is2D>
+    </EntitySave>
+    <EntitySave>
+      <Tags>
+        <string>GLUE</string>
+      </Tags>
+      <Source>GLUE</Source>
+      <Name>Entities\StarBackground</Name>
+      <NamedObjects>
+        <NamedObjectSave>
+          <SourceType>FlatRedBallType</SourceType>
+          <SourceFile />
+          <SourceClassType>PositionedObjectList&lt;T&gt;</SourceClassType>
+          <SourceClassGenericType>Entities\Star</SourceClassGenericType>
+          <InstanceName>StarList</InstanceName>
+          <AttachToContainer>true</AttachToContainer>
+          <IndependentOfCamera>true</IndependentOfCamera>
+        </NamedObjectSave>
+      </NamedObjects>
+      <Is2D>true</Is2D>
+    </EntitySave>
   </Entities>
   <GlobalFiles>
     <ReferencedFileSave>
@@ -587,14 +755,14 @@
     <RecordLockContention>false</RecordLockContention>
   </GlobalContentSettingsSave>
   <SyncedProjects />
-  <StartUpScreen>Screens\TestScreen</StartUpScreen>
+  <StartUpScreen>Screens\GameScreen</StartUpScreen>
   <In2D>true</In2D>
-  <SetResolution>false</SetResolution>
-  <ResolutionWidth>800</ResolutionWidth>
-  <ResolutionHeight>600</ResolutionHeight>
+  <SetResolution>true</SetResolution>
+  <ResolutionWidth>448</ResolutionWidth>
+  <ResolutionHeight>576</ResolutionHeight>
   <SetOrthogonalResolution>true</SetOrthogonalResolution>
-  <OrthogonalWidth>400</OrthogonalWidth>
-  <OrthogonalHeight>300</OrthogonalHeight>
+  <OrthogonalWidth>250</OrthogonalWidth>
+  <OrthogonalHeight>322</OrthogonalHeight>
   <ResolutionPresets />
   <PerformanceSettingsSave>
     <ThrowExceptionOnPostInitializeContentLoad>false</ThrowExceptionOnPostInitializeContentLoad>
