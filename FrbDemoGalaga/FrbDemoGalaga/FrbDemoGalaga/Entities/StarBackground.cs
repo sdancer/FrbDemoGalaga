@@ -28,12 +28,13 @@ namespace FrbDemoGalaga.Entities
 	public partial class StarBackground
 	{
 	    private const int SpawnStar = 400;
+	    private const int SpawnStarY = 400;
 
 	    private void CustomInitialize()
 		{
             StarFactory.Initialize(StarList, ContentManagerName);
 
-	        var y = 200;
+	        var y = SpawnStarY;
 
             while (y > -171)
             {
@@ -58,7 +59,7 @@ namespace FrbDemoGalaga.Entities
 		{
             if (GlobalRandom.Rand.Next(0, 1000) > SpawnStar)
             {
-                CreateStar(200);
+                CreateStar(SpawnStarY);
             }
 		}
 
