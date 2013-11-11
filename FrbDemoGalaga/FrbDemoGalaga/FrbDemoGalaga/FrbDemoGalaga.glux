@@ -66,6 +66,13 @@
       </Tags>
       <Source>GLUE</Source>
       <Name>Screens\TestScreen</Name>
+      <ReferencedFiles>
+        <ReferencedFileSave>
+          <Name>Screens/TestScreen/SceneFile.scnx</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Scene</RuntimeType>
+        </ReferencedFileSave>
+      </ReferencedFiles>
       <NamedObjects>
         <NamedObjectSave>
           <SourceType>Entity</SourceType>
@@ -758,8 +765,8 @@
   <StartUpScreen>Screens\GameScreen</StartUpScreen>
   <In2D>true</In2D>
   <SetResolution>true</SetResolution>
-  <ResolutionWidth>448</ResolutionWidth>
-  <ResolutionHeight>576</ResolutionHeight>
+  <ResolutionWidth>621</ResolutionWidth>
+  <ResolutionHeight>800</ResolutionHeight>
   <SetOrthogonalResolution>true</SetOrthogonalResolution>
   <OrthogonalWidth>250</OrthogonalWidth>
   <OrthogonalHeight>322</OrthogonalHeight>
